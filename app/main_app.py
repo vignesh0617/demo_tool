@@ -26,4 +26,4 @@ main_app.app.layout = html.Div(children = [
     ])
 
 if(__name__ == "__main__"):
-    main_app.app.run_server(port = 8056 , debug = False, dev_tools_hot_reload = True)
+    main_app.app.run_server(port = 8052 , debug = False, dev_tools_hot_reload = True)
