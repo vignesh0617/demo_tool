@@ -1,0 +1,60 @@
+add_sample_data = 1
+
+secret_key = my_super_secret_key
+algorithm = HS256
+host = localhost
+database_name = cidm_demo_2
+username = root
+password = root
+session_time_in_secs = 1300
+
+home_page_link = /rulebindingtest
+login_page_link = /login
+logout_page_link = /logout
+rule_execution_link = /ruleexecution
+score_card_link = /scorecard
+custom_rules_new = /customrules/raisereq
+custom_rules_my_req = /customrules/myreq
+custom_rules_new_rule = /customrules/newrule
+
+rules_repo_table_name = rules_repo
+rules_repo_table_id = rules_repo_table
+rules_repo_table_primary_key_col_number = 3
+rules_repo_table_primary_key_col_numbers = 1,3,4,5,9,10,11,15,16
+rules_repo_table_col_numbers_to_omit = 6,7,8,9,10,11,12,13,14,15,16
+
+rule_binding_table_name = rule_binding
+rule_binding_table_id = rule_binding_table
+rule_binding_table_primary_key_col_number = 0
+rule_binding_table_primary_key_col_numbers = 1
+rule_binding_table_col_numbers_to_omit = 0,4,5,6
+
+score_card_top_table_id = score_card_top_table
+score_card_top_table_primary_key_col_number = 3
+score_card_top_table_primary_key_col_numbers = 1,8,9,10,11,12,13,14
+score_card_top_table_col_numbers_to_omit = 7,8,9,10,11,12,13,14
+
+score_card_bottom1_table_id = score_card_bottom1_table
+score_card_bottom1_table_primary_key_col_number = 0
+score_card_bottom1_table_primary_key_col_numbers = 0,1,2,5
+score_card_bottom1_table_col_numbers_to_omit = 0,1,2,3
+score_card_bottom1_table_col_action_col_number = 4
+
+filter_ids_rule_repo = rr_domain_f,rr_dq_dimension_f,rr_rule_type_f
+filter_table_columns_rules_repo = domain,dq_dimension,rule_type
+filter_table_names_rules_repo = rules_repo,rules_repo,rules_repo
+filter_table_labels_rules_repo = Domain,DQ Dimension,Rule Type
+
+filter_ids_rule_binding = rb_domain_f,rb_dq_dimension_f,rb_rule_type_f
+filter_table_columns_rule_binding = domain,dq_dimension,rule_type
+filter_table_names_rule_binding = UI_SCORE_CARD_TOP_TABLE,UI_SCORE_CARD_TOP_TABLE,UI_SCORE_CARD_TOP_TABLE
+filter_table_labels_rule_binding = Domain,DQ Dimension,Rule Type
+
+query_for_score_card_top_table = select * from ui_score_card_top_table
+
+users_table = users
+
+information_schema_table_name = information_schema.tables
+table_col_name = table_name
+database_col_name = table_schema
+
