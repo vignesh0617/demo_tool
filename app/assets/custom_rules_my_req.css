@@ -1,0 +1,132 @@
+.my_req_main_container{
+    background: transparent;
+    height: 100vh;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.my_req_navbar{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+}
+
+.my_req_body{
+    margin-top: 57px;
+    /* background-color: blue; */
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+/* .my_req_body > *{
+    visibility: hidden;
+} */
+
+
+.my_req_side_contents_1{
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    flex: 0.20;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.my_req_side_contents_1 > *{
+    width: 90%;
+}
+
+/* #my_req_user_ids{
+    visibility: visible;
+} */
+
+#my_req_description{
+    height: 35vh;
+}
+
+.my_req_side_contents_2 > *{
+    width: 98%;
+}
+
+.my_req_comments_area > *{
+    width: 99%;
+}
+
+.my_req_side_contents_2{
+    /* background-color: rgb(106, 147, 182);     */
+    flex: 0.80;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.my_req_comments_area{
+    background-color: #5f5f5f99;
+    flex: 0.92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 75vh;
+    overflow-y: auto;
+    /* border: 1px solid wheat; */
+}
+
+.my_req_comments{
+    background-color: #e9ecff;
+    height: auto;
+    margin: 1.6vh;
+    padding: 0.5vh;
+    position: relative;
+    border-radius: 0  2vh 2vh 0;
+    border-left: 5px solid #7baccb;
+   
+}
+
+.my_req_time_stamp{
+    float: right;
+    width: fit-content;
+    font-size: 10px;
+    font-style: italic;
+    margin-right: 1vh;
+}
+
+.my_req_submit_area{
+    /* background-color: rgb(152, 114, 43); */
+    flex: 0.08;
+    display: flex;
+}
+
+.my_req_submit_area *{
+    border-radius: 0;
+}
+
+/* .my_req_post_comments{
+    flex: 0.90;
+}
+
+.my_req_submit_comment{
+    flex: 0.10;
+    cursor: pointer;
+} */
+
+.my_req_badge{
+    float: left;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 7vh;
+    background-color: #a9acce;
+    border:1px solid #3f4d59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1vh;
+    font-weight: bold;
+}

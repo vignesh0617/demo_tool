@@ -1,0 +1,124 @@
+.navbar-container{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+    border-bottom: 0.5px solid white;
+}
+
+.navbar ul, .navbar li{
+    list-style-type: none;
+    background-color: #000048;
+}
+
+.navbar{
+    background-color: #000048;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar , .navbar *{
+    font-size: 1rem;
+    margin : 0;
+    padding : 0;
+}
+
+.navbar ul{
+    display: flex;
+    flex:1;
+    justify-content: flex-start;
+}
+
+.navbar :nth-child(2){
+    flex: 0;
+    /* margin-right: 90px; */
+}
+
+.navbar :nth-child(2) .submenu{
+    transform: translateX(-33%);
+}
+
+.navbar :nth-child(2) a{
+    /* padding: 7px 7px; */
+}
+/* .navbar li{
+    text-decoration: none;
+    color : white;
+    list-style: none;
+    padding : 15px 20px;
+    margin: 0;
+} */
+
+.navbar a{
+    display: flex;
+    text-decoration: none;
+    color : white;
+    list-style: none;
+    padding : 18px 20px ;
+    margin: 0;
+    width: max-content;
+}
+
+.navbar a{
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a.active-link::after{
+    content: "";
+    position: absolute;
+    left :0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 5px solid white;
+    border-radius: 2rem;
+}
+
+.navbar li:hover{
+    background-color: #000088cf;
+    cursor : pointer;
+}
+
+
+#logo{
+    display: flex;
+    width: 110px;
+    align-items: center;
+}
+
+#cognizant_logo{
+    height: 19px;
+}
+
+
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease all;
+    border: 1px solid white;
+}
+
+li:hover ul.submenu{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.my_req_badge2{
+    transform: scale(0.65);
+    /* padding: 10px 10px !important; */
+    border-radius: 50%;
+    border:1px solid white;
+    font-weight: bold;
+}
+
+a{
+    /* transform: scale(0.65); */
+    padding: 0;
+}

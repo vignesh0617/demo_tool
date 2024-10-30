@@ -1,0 +1,97 @@
+#rule_binding_page_headeing{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#rule_binding_table_container{
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    max-height: 400px;
+    overflow: auto;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.482); */
+}
+
+#rule_binding_table_container table thead {
+    position: sticky;
+    top:0;
+}
+
+#rule_binding_table_container::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    transform: translatey(30px);
+}
+
+
+#rule_binding_table_container::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
+
+
+#rule_binding_table_container::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+
+#rule_binding_table thead th:nth-last-child(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    
+}
+
+#rule_binding_table thead th:nth-last-child(1) .form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#rule_binding_table thead th:nth-last-child(1) .form-check:hover {
+    background-color: inherit;
+}
+
+#rule_binding_table thead th:nth-last-child(1) .form-check  input{
+    transform: translateX(-8px);
+}
+
+#rule_binding_table thead th:nth-last-child(1) .form-check .form-check-label {
+    padding: 0;
+    transform: translateY(4px);
+    margin-left: 3px;
+    width: max-content;
+}
+
+
+#rule_binding_table tbody tr {
+    cursor: pointer;
+}
+
+#rule_binding_page_heading{
+    text-align: center;
+    margin-top: 32px;
+    color : white;
+    
+}
+
+#rule_binding_button_container{
+    /* text-align: center; */
+    margin: 15px 0px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#rule_binding_page_main_container{
+    overflow: hidden;
+    height: 90.3vh;
+}
+
+#rule_binding_table input[type=checkbox][disabled]{
+    opacity: 1;
+  }
+
+#selected_rule_ids{
+    visibility: hidden;
+}

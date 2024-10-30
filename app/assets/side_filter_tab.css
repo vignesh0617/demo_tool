@@ -1,0 +1,234 @@
+.side-filter-tab-container{
+
+    position: sticky;
+    top : 67px;
+    height: 87vh;
+    font-size: 12px;
+    margin:10px 5px;
+    margin-left: 10px;
+    padding : 10px 0px;
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+
+    overflow-x: hidden;
+    flex-basis: 20%;
+    transition: var(--transition);
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+}
+
+
+.side-filter-tab-container:hover  *
+{
+    opacity: 1;
+} */
+
+/* .side-filter-tab-container:hover + .main-content
+{
+    flex-basis: 80%;
+    font-size: 15px;
+} */
+
+
+
+/* .arrow-position{
+    position: absolute;
+    top : 50px;
+    right : -3px;
+    transform: translate(50%,0%);
+    z-index: 20;
+    opacity: 1;
+} */
+
+.filter-icon,#trend_label{
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 15px;
+    /* color: #000048d2; */
+    transform: scale(1.5);
+    cursor: pointer;
+    
+
+}
+
+.filter-card{
+
+    font-size: 10px;
+    background-color: #ffffffed;
+    width: 90%;
+    flex-basis: 100%;
+
+    /* Style 1 with box shadows */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.568);
+    padding: 20px;
+    margin :20px auto;
+
+    /* Style 2 without box shadows */
+    /* padding: 10px;
+    margin-left :10px; */
+    
+}
+
+.filter-label {
+    color : rgb(0, 0, 0);
+    font-size: 14px;
+
+}
+
+.filter-header{
+    margin:9px 15px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* .Select-menu-outer{
+    margin-bottom : 10px
+} */
+
+
+/* From here all css pros are for drop down filter contents *
+/
+/* This is for all  drop down filter buttons */
+.side-filter-tab-container .dropdown .btn{
+    background-color: transparent;
+    color: black;
+    font-size: inherit;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 100%;
+    overflow-x: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.form-check{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.form-check>*{
+    cursor: pointer;
+}
+.form-check:hover{
+    background-color: rgb(209, 209, 209);    
+}
+
+.form-label{
+    margin: 0px;
+    /* position: relative; */
+    color: white;
+}
+
+.form-check-label,.form-check-label+*{
+    width: 100%;
+    padding: 4.3px;
+}
+
+.dropdown-menu.show{
+    font-size: inherit;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 90%;
+    border : 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.filter-type{
+    border-top: 1px solid #7a7a7a;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.filter-type>*{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#filter_type .form-check .form-check-label {
+    width: max-content;
+}
+
+#filter_type .form-check:hover {
+    background-color: transparent
+}
+
+#trend_chart_options_container{
+    height: 20vh;
+}
+
+#trend_chart_option{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+
+
+#trend_chart_options_container .form-check-label, .form-check-label+*{
+    width: auto;
+    padding: 0px;
+    margin-left:3px ;
+}
+
+#trend_chart_options_container .form-check{
+    align-items: flex-start;
+}
+
+.side-filter-tab-contents{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.side-filter-tab-contents *{
+    font-size: small;
+}
+
+
+.side-filter-tab-contents>*{
+    flex: 1;
+}
+
+.side-filter-tab-contents .filter_drop_down .dropdown{
+    width: 90%;
+}
+
+.side-filter-tab-contents .filter_drop_down .btn {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    background-color: rgba(246, 242, 246, 0.612);
+    color: black;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.571);
+}
+
+/* 
+.side-filter-tab-contents .dropdown-menu.show {
+    font-size: inherit;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    width: 90%;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+
+    flex: 0;
+} */
+
+#clear_filter_button{
+    transform: translateY(9px);
+    font-size: small;
+}
